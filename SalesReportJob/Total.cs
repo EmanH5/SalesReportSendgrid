@@ -32,7 +32,7 @@ namespace SalesReportJob
             {
                 _logger.LogInformation($"Next timer schedule at: {myTimer.ScheduleStatus.Next}");
                 // Get connection string of the sales SQL database
-                var connectionString = Environment.GetEnvironmentVariable("SqlConnectionString");
+                var connectionString = Environment.GetEnvironmentVariable("DBCONNECTION_STRING");
                 var yesterday = DateTime.UtcNow.Date.AddDays(-1); // For the previous day's sales
 
                 // SQL Queries
