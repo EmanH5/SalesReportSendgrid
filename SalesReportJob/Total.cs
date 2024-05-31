@@ -95,7 +95,7 @@ namespace SalesReportJob
                 string template = "<h1>Sales Report for: {0:yyyy-MM-dd}</h1><p><b>Total:</b> {1:C}</p>";
                 string message = string.Format(template, date, total);
 
-                var apiKey = Environment.GetEnvironmentVariable("SENDGIRD_API_KEY");
+                var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
                 var client = new SendGridClient(apiKey);
                 var from = new EmailAddress("add_sendgird_verified_email", "Sales Report");
                 var to = new EmailAddress(toEmail);
