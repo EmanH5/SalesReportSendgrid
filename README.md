@@ -5,7 +5,7 @@ check my tutorial from Twilio's blog for detailed steps https://www.twilio.com/e
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (v14.x or later)
+- .NET 8
 - [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [SendGrid Account](https://sendgrid.com/)
